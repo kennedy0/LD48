@@ -42,13 +42,32 @@ public class PlayerController : MonoBehaviour
     public float MinWheelSpeed = 0.1f;
 
     [Header("Weapons")]
-    public Weapon LeftWeapon;
-    public Weapon RightWeapon;
+    public bool CanShoot;
+    public GameObject LeftWeaponObject;
+    public GameObject RightWeaponObject;
+    public Weapon PlayerWeapon;
+    public Transform LeftWeaponSpawnPoint;
+    public Transform RightWeaponSpawnPoint;
+
+    [Header("Oxygen")]
+    public float Oxygen;
+    public float MaxOxygen;
+    public float OxygenDrainRate;
+    public float OxygenRegenRate;
+    
+    [Header("Heat")]
+    public float Heat;
+    public float MaxHeat;
+    public float HeatBuildRate;
+    public float HeatDecayRate;
+
+    [Header("Drill")]
+    public CircleCollider2D DrillCollider;
     
     [Header("Other")]
-    public Transform WheelsGroup;
     public VehicleMode VehicleMode;
     public bool CanMove = true;
+    public bool IsDead = false;
 
     private Rigidbody2D rb;
 
@@ -63,19 +82,24 @@ public class PlayerController : MonoBehaviour
     private float rotateSpeed;
 
     private bool isTransitioning;
-    private float leftWeaponCooldown;
-    private float rightWeaponCooldown;
-    private List<Weapon> weapons;
+    private float weaponCooldown;
+    private bool fireLeft = true;
+    private TerrainManager terrainManager;
 
     private void Start()
     {
         cam = Camera.main;
         rb = GetComponent<Rigidbody2D>();
         SetInitialAnimationState();
+        terrainManager = GameObject.Find("MANAGER").GetComponent<TerrainManager>();
         
-        weapons = new List<Weapon>();
-        weapons.Add(LeftWeapon);
-        weapons.Add(RightWeapon);
+        // Setup
+        IsDead = false;
+        Oxygen = MaxOxygen;
+        Heat = 0f;
+        CanShoot = false;
+        LeftWeaponObject.SetActive(false);
+        RightWeaponObject.SetActive(false);
     }
 
     private void SetInitialAnimationState()
@@ -93,15 +117,34 @@ public class PlayerController : MonoBehaviour
 
     private void Update()
     {
+        HandleDeath();
+
         GetInput();
         HandleEngine();
         HandleAnimation();
         HandleBubbleParticles();
+        HandleOxygen();
+        HandleHeat();
+        HandleDrillObject();
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (TerrainMismatch() && !isTransitioning)
         {
             StartCoroutine(Transition());
         }
+    }
+
+    private bool TerrainMismatch()
+    {
+        if (terrainManager.CurrentTerrain == Terrain.Land && VehicleMode == VehicleMode.Water)
+        {
+            return true;
+        }
+        if (terrainManager.CurrentTerrain == Terrain.Water && VehicleMode == VehicleMode.Land)
+        {
+            return true;
+        }
+
+        return false;
     }
 
     private bool InputEnabled()
@@ -145,6 +188,11 @@ public class PlayerController : MonoBehaviour
         }
         
         // Weapons
+        weaponCooldown -= Time.deltaTime;
+        if (weaponCooldown < 0f)
+        {
+            weaponCooldown = 0f;
+        }
         HandleWeapons();
     }
 
@@ -284,6 +332,8 @@ public class PlayerController : MonoBehaviour
 
     public IEnumerator Transition()
     {
+        Debug.Log("Transitioning...");
+        
         isTransitioning = true;
         velocity = Vector2.zero;
         
@@ -334,9 +384,93 @@ public class PlayerController : MonoBehaviour
             return;
         }
 
-        foreach (Weapon weapon in weapons)
+        if (!CanShoot)
         {
-            
+            return;
+        }
+
+        Transform spawnPoint;
+        if (fireLeft)
+        {
+            spawnPoint = LeftWeaponSpawnPoint;
+        }
+        else
+        {
+            spawnPoint = RightWeaponSpawnPoint;
+        }
+
+        if (weaponCooldown <= 0f)
+        {
+            GameObject projectile = Instantiate(PlayerWeapon.Projectile, spawnPoint.position, spawnPoint.rotation);
+            projectile.GetComponent<Rigidbody2D>().AddForce(projectile.transform.up * PlayerWeapon.Speed, ForceMode2D.Impulse);
+            weaponCooldown = PlayerWeapon.Cooldown;
+            fireLeft = !fireLeft;
+        }
+    }
+
+    private void HandleHeat()
+    {
+        if (terrainManager.CurrentTerrain == Terrain.Land)
+        {
+            Heat += Time.deltaTime * HeatBuildRate;
+        }
+        else
+        {
+            Heat -= Time.deltaTime * HeatDecayRate;
+        }
+
+        Heat = Mathf.Clamp(Heat, 0f, MaxHeat);
+    }
+
+    private void HandleOxygen()
+    {
+        if (terrainManager.CurrentTerrain == Terrain.Water)
+        {
+            Oxygen -= Time.deltaTime * OxygenDrainRate;
+        }
+        else
+        {
+            Oxygen += Time.deltaTime * OxygenRegenRate;
+        }
+
+        Oxygen = Mathf.Clamp(Oxygen, 0f, MaxOxygen);
+    }
+
+    private void HandleDeath()
+    {
+        if (IsDead)
+        {
+            return;
+        }
+
+        if (Oxygen <= 0f)
+        {
+            StartCoroutine(Die("You ran out of air."));
+        }
+        else if (Heat >= MaxHeat)
+        {
+            StartCoroutine(Die("You overheated."));
+        }
+    }
+
+    public IEnumerator Die(string message)
+    {
+        IsDead = true;
+        CanMove = false;
+        CanShoot = false;
+        Debug.Log(message);
+        yield break;
+    }
+
+    public void HandleDrillObject()
+    {
+        if (drillOn && drill >= 1f)
+        {
+            DrillCollider.enabled = true;
+        }
+        else
+        {
+            DrillCollider.enabled = false;
         }
     }
 }

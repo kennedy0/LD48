@@ -3,16 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="afb085d0-53a2-445d-b198-a5058238cc23" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LD48/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD48/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.LD48/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD48/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LD48/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD48/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/prop_lights.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/prop_lights.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/laser_small.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/laser_small.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Textures/_test/test_canvas.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/_test/test_canvas.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Textures/_test/test_canvas.psd" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/_test/test_canvas.psd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/bathysphere/bathysphere.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/bathysphere/bathysphere.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/bathysphere/bathysphere.psd" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/bathysphere/bathysphere.psd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,15 +23,25 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TerrainManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3CDF672C-21B8-49DE-A215-F9C9AFF21F77/e1/ae92fcdf/MouseButton.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraScroll.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Wheels.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/InvisibleWalls.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DestructableTiles.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GenerateTiles.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Assets/Scripts/Wheels.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapons.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TerrainManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CameraScroll.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/InvisibleWalls.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DestructableTiles.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GenerateTiles.cs" />
       </list>
     </option>
   </component>
@@ -75,7 +84,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1619284229188</updated>
-      <workItem from="1619284244773" duration="17494000" />
+      <workItem from="1619284244773" duration="30773000" />
     </task>
     <servers />
   </component>
