@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 5301902183169553887}
   m_Layer: 0
   m_Name: TileHitbox
-  m_TagString: Untagged
+  m_TagString: Block
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,8 +96,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0cc77364e8477e49bd9b58d221ee0e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 3
-  InvincibilityTime: 0.5
+  HP: 1
+  InvincibilityTime: 0.1
   DestroyDistance: 5
 --- !u!61 &5301902183169553887
 BoxCollider2D:

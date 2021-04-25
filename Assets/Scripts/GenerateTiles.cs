@@ -11,9 +11,12 @@ public class GenerateTiles : MonoBehaviour
     public Tile BlackTile;
     
     public GameObject TileHitbox;
+    public GameObject TileHitbox_Black;
+
+    
     public float TileSize = 16f;
     public float XOffset = 3.5f;
-    public int ChunkWidth = 28;
+    public int ChunkWidth = 20;
     public int ChunkHeight = 10;
     
     private Tilemap tilemap;
@@ -76,11 +79,16 @@ public class GenerateTiles : MonoBehaviour
                     float yPos = y - halfTileSize - (tileSize * j);
                     float xPos = x - (chunkWidthWorldUnits / 2f) + halfTileSize + (tileSize * i);
                     Vector3 tilePosWorld = new Vector3(xPos, yPos, 0f);
-                    Vector3Int tilePos = tilemap.WorldToCell(tilePosWorld);
-                    tilemap.SetTile(tilePos, tile);
-                    Instantiate(TileHitbox, tilePosWorld, quaternion.identity);
+                    SetTile(tilePosWorld, BlackTile, TileHitbox_Black);
                 }
             }
         }
+    }
+
+    private void SetTile(Vector3 tilePosWorld, Tile tile, GameObject hitbox)
+    {
+        Vector3Int tilePos = tilemap.WorldToCell(tilePosWorld);
+        tilemap.SetTile(tilePos, tile);
+        Instantiate(hitbox, tilePosWorld, quaternion.identity);
     }
 }

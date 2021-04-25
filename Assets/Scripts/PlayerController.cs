@@ -370,6 +370,11 @@ public class PlayerController : MonoBehaviour
         return engine;
     }
 
+    public float GetDrillSpeed()
+    {
+        return drill;
+    }
+
     public bool EngineIsOn()
     {
         return engineOn;
