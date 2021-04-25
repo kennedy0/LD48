@@ -98,6 +98,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HP: 3
   InvincibilityTime: 0.5
+  DestroyDistance: 5
 --- !u!61 &5301902183169553887
 BoxCollider2D:
   m_ObjectHideFlags: 0

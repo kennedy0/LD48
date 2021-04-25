@@ -2,16 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afb085d0-53a2-445d-b198-a5058238cc23" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LD48/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD48/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LD48/.idea/indexLayout.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD48/.idea/indexLayout.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LD48/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD48/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/laser_small.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Projectiles/laser_small.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Palettes/RockTIles.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Palettes/RockTIles.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TileHitbox.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/TileHitbox.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GenerateTiles.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GenerateTiles.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/InvisibleWalls.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/InvisibleWalls.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/_test/test_canvas.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/_test/test_canvas.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/_test/test_canvas.psd" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/_test/test_canvas.psd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,8 +35,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapons.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TerrainManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraScroll.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InvisibleWalls.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DestructableTiles.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GenerateTiles.cs" />
       </list>
@@ -84,7 +81,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1619284229188</updated>
-      <workItem from="1619284244773" duration="30773000" />
+      <workItem from="1619284244773" duration="33550000" />
     </task>
     <servers />
   </component>

@@ -6382,12 +6382,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 04ac0cb5b02daec42841a64af889b36a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BlueTile: {fileID: 0}
+  BlueTile: {fileID: 11400000, guid: 518475dcde6eb7945a66447c7cc8615d, type: 2}
+  RedTile: {fileID: 11400000, guid: 31d02277b216b8f46a836a0bd092466b, type: 2}
+  BlackTile: {fileID: 11400000, guid: 090eb6af29f038041bcc53526df624e3, type: 2}
   TileHitbox: {fileID: 5301902183169553875, guid: 0ebc9f3131a4027459487d8053afebeb, type: 3}
   TileSize: 16
   XOffset: 3.5
   ChunkWidth: 28
   ChunkHeight: 10
+  lastChunkY: 10
 --- !u!1 &1070873662
 GameObject:
   m_ObjectHideFlags: 0

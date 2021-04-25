@@ -15,6 +15,8 @@ public class InvisibleWalls : MonoBehaviour
 
     void Update()
     {
-        transform.position = cam.position + offset;
+        Vector3 newPos = transform.position;
+        newPos.y = cam.position.y + offset.y;
+        transform.position = newPos;
     }
 }

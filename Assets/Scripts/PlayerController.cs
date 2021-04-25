@@ -332,8 +332,6 @@ public class PlayerController : MonoBehaviour
 
     public IEnumerator Transition()
     {
-        Debug.Log("Transitioning...");
-        
         isTransitioning = true;
         velocity = Vector2.zero;
         
