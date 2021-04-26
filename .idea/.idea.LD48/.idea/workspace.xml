@@ -4,14 +4,21 @@
     <list default="true" id="afb085d0-53a2-445d-b198-a5058238cc23" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LD48/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD48/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LD48/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD48/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TileHitbox.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/TileHitbox.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/Shader Graphs_SpriteGlowUnlit.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Shader Graphs_SpriteGlowUnlit.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Palettes/RockTIles.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Palettes/RockTIles.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TileHitbox_Black.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/TileHitbox_Black.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraScroll.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraScroll.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DestructableTiles.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DestructableTiles.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GenerateTiles.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GenerateTiles.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/_test/test_canvas.psd" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/_test/test_canvas.psd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/particles/rock.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/particles/rock.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Textures/particles/rock.psd" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/particles/rock.psd" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,17 +30,23 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Weapons.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TerrainManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3CDF672C-21B8-49DE-A215-F9C9AFF21F77/e1/ae92fcdf/MouseButton.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DepthUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/HighScore.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/HeatMeterUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DrillSparks.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraScroll.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Wheels.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/RockDestroyAudio.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MainMenuUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/InvisibleWalls.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/O2MeterUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DestructableTiles.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/MessageBoxScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GenerateTiles.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TerrainManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/3CDF672C-21B8-49DE-A215-F9C9AFF21F77/e1/ae92fcdf/MouseButton.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DepthUI.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/DeathWall.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/CameraScroll.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Wheels.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Tutorial.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -41,16 +54,22 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/Wheels.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/Weapons.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/TerrainManager.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/CameraScroll.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/InvisibleWalls.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/DestructableTiles.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AudioLooper.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/GenerateTiles.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/O2MeterUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HeatMeterUI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DepthUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/DrillSparks.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/RockDestroyAudio.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DestructableTiles.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HighScore.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MessageBoxScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/DeathWall.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CameraScroll.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MainMenuUI.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tutorial.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/GenerateTiles.cs" />
       </list>
     </option>
   </component>
@@ -94,7 +113,7 @@
       <option name="presentableId" value="Default" />
       <updated>1619284229188</updated>
       <workItem from="1619284244773" duration="33776000" />
-      <workItem from="1619364078966" duration="6153000" />
+      <workItem from="1619364078966" duration="23940000" />
     </task>
     <servers />
   </component>

@@ -7,6 +7,8 @@ public class CameraScroll : MonoBehaviour
     public float Speed;
     public float ScreenXOffset = 4f;
     public float TransitionTime = 2f;
+    public float PauseAfterTransition = 1f;
+    public float SpeedTransitionTime = 5f;
 
     public bool IsScrollingDown = false;
     private GameObject player;
@@ -21,6 +23,11 @@ public class CameraScroll : MonoBehaviour
         playerController = player.GetComponent<PlayerController>();
         playerTransform = player.GetComponent<Transform>();
         terrainManager = GameObject.Find("MANAGER").GetComponent<TerrainManager>();
+
+        // Start camera at zero speed
+        float s = Speed;
+        Speed = 0f;
+        StartCoroutine(SetCameraSpeed(s));
     }
 
     void Update()
@@ -85,6 +92,20 @@ public class CameraScroll : MonoBehaviour
         }
 
         Time.timeScale = 1f;
+        
+        yield return new WaitForSeconds(PauseAfterTransition);
         isTransitioning = false;
+    }
+
+    private IEnumerator SetCameraSpeed(float speed)
+    {
+        float t = SpeedTransitionTime;
+        float startSpeed = Speed;
+        while (t > 0f)
+        {
+            Speed = Mathf.SmoothStep(speed, startSpeed, t / SpeedTransitionTime);
+            t -= Time.deltaTime;
+            yield return new WaitForSeconds(Time.deltaTime);
+        }
     }
 }

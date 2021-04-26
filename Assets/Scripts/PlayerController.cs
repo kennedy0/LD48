@@ -3,6 +3,8 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using Random = UnityEngine.Random;
 
 
 public enum VehicleMode
@@ -68,6 +70,11 @@ public class PlayerController : MonoBehaviour
     public VehicleMode VehicleMode;
     public bool CanMove = true;
     public bool IsDead = false;
+    public float PostDeathTime = 2f;
+    public MessageBoxScript MessageBox;
+    public List<string> WaterDeathMessages;
+    public List<string> LandDeathMessages;
+    public bool isTutorial;
 
     private Rigidbody2D rb;
 
@@ -448,32 +455,69 @@ public class PlayerController : MonoBehaviour
 
         if (Oxygen <= 0f)
         {
-            StartCoroutine(Die("You ran out of air."));
+            string message = WaterDeathMessages[Random.Range(0, WaterDeathMessages.Count)];
+            StartCoroutine(Die(message));
         }
         else if (Heat >= MaxHeat)
         {
-            StartCoroutine(Die("You overheated."));
+            string message = LandDeathMessages[Random.Range(0, LandDeathMessages.Count)];
+            StartCoroutine(Die(message));
         }
     }
 
     public IEnumerator Die(string message)
     {
+        // Set variables
         IsDead = true;
         CanMove = false;
         CanShoot = false;
-        Debug.Log(message);
-        yield break;
+        HandleHighScore();
+        cam.GetComponent<CameraScroll>().IsScrollingDown = false;
+
+        if (isTutorial)
+        {
+            yield break;
+        }
+
+        // Pause
+        yield return new WaitForSeconds(PostDeathTime);
+        
+        // Show message
+        List<string> m = new List<string>();
+        m.Add(message);
+        StartCoroutine(MessageBox.ShowMessages(m));
+        
+        // Pause
+        yield return new WaitForSeconds(PostDeathTime);
+        
+        // Main Menu
+        SceneManager.LoadScene("MainMenu");
     }
 
     public void HandleDrillObject()
     {
-        if (drillOn && drill >= 1f)
+        if (drillOn && drill > 0f)
         {
             DrillCollider.enabled = true;
         }
         else
         {
             DrillCollider.enabled = false;
+        }
+    }
+
+    public void HandleHighScore()
+    {
+        int highScore = 0;
+        if (PlayerPrefs.HasKey("highscore"))
+        {
+            highScore = PlayerPrefs.GetInt("highscore");
+        }
+
+        int currentScore = Mathf.FloorToInt(Mathf.Abs(cam.transform.position.y) * 5);
+        if (currentScore > highScore)
+        {
+            PlayerPrefs.SetInt("highscore", currentScore);
         }
     }
 }

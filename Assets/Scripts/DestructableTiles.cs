@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.Tilemaps;
 
@@ -9,7 +10,9 @@ public class DestructableTiles : MonoBehaviour
     public int HP;
     public float InvincibilityTime;
     public float DestroyDistance;
-    
+    public GameObject ParticlesOnDeath;
+
+    private RockDestroyAudio rockAudio;
     private Tilemap tilemap;
     private bool canTakeDamage;
     private Transform cam;
@@ -19,6 +22,7 @@ public class DestructableTiles : MonoBehaviour
         tilemap = GameObject.Find("Grid").transform.Find("Tilemap").GetComponent<Tilemap>();
         canTakeDamage = true;
         cam = Camera.main.transform;
+        rockAudio = Camera.main.transform.Find("RockDestroyAudio").GetComponent<RockDestroyAudio>();
     }
 
     private void Update()
@@ -60,6 +64,8 @@ public class DestructableTiles : MonoBehaviour
     {
         Vector3Int tilePosition = tilemap.WorldToCell(transform.position);
         tilemap.SetTile(tilePosition, null);
+        Instantiate(ParticlesOnDeath, transform.position, quaternion.identity);
+        rockAudio.PlayRockSound();
         Destroy(gameObject);
     }
 }

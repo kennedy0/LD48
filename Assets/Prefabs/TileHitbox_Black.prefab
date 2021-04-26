@@ -96,9 +96,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0cc77364e8477e49bd9b58d221ee0e6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HP: 5
+  HP: 3
   InvincibilityTime: 0.1
   DestroyDistance: 5
+  ParticlesOnDeath: {fileID: 355706051266388082, guid: 0e0ef8fe09ca06b4f926886fdc1b644d, type: 3}
 --- !u!61 &5301902183169553887
 BoxCollider2D:
   m_ObjectHideFlags: 0

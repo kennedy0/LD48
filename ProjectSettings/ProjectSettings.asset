@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: AndrewKennedy
-  productName: LD48
+  productName: LD48_DigAndDive
   defaultCursor: {fileID: 2800000, guid: 1f5d0d3df68b09c438c4c90f99b3d2b8, type: 3}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}

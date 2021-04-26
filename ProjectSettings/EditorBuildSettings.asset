@@ -6,6 +6,27 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/MainMenu.unity
+    guid: 9b441e9a7c9afb240957cce280cd326d
+  - enabled: 1
+    path: Assets/Scenes/TutorialLand.unity
+    guid: 3515c5121f1e36f4b95e0248179812de
+  - enabled: 1
+    path: Assets/Scenes/TutorialWater.unity
+    guid: d88c8aa65d2fbf642bb73cf7d7988c3f
+  - enabled: 1
+    path: Assets/Scenes/LandLevel.unity
+    guid: 54ddbadb19ab23a45b62f3eed370293e
+  - enabled: 1
+    path: Assets/Scenes/WaterLevel.unity
+    guid: 5fe93dce249729044a08f6ad9865f06d
+  - enabled: 1
+    path: Assets/Scenes/Level.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/TutorialWater2.unity
+    guid: 6dd0984f8d71ed245afde84c66a7df61
+  - enabled: 1
+    path: Assets/Scenes/TutorialLand2.unity
+    guid: af9caa10c0273514897ce7a947356414
   m_configObjects: {}

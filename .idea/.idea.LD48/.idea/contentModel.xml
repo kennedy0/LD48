@@ -20,16 +20,22 @@
         <e p="Scripts" t="Include">
           <e p="AudioLooper.cs" t="Include" />
           <e p="CameraScroll.cs" t="Include" />
+          <e p="DeathWall.cs" t="Include" />
           <e p="DepthUI.cs" t="Include" />
           <e p="DestroyAfterSeconds.cs" t="Include" />
           <e p="DestructableTiles.cs" t="Include" />
           <e p="DrillSparks.cs" t="Include" />
           <e p="GenerateTiles.cs" t="Include" />
           <e p="HeatMeterUI.cs" t="Include" />
+          <e p="HighScore.cs" t="Include" />
           <e p="InvisibleWalls.cs" t="Include" />
+          <e p="MainMenuUI.cs" t="Include" />
+          <e p="MessageBoxScript.cs" t="Include" />
           <e p="O2MeterUI.cs" t="Include" />
           <e p="PlayerController.cs" t="Include" />
+          <e p="RockDestroyAudio.cs" t="Include" />
           <e p="TerrainManager.cs" t="Include" />
+          <e p="Tutorial.cs" t="Include" />
           <e p="Weapons.cs" t="Include" />
           <e p="Wheels.cs" t="Include" />
         </e>
