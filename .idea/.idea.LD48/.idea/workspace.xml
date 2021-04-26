@@ -2,22 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="afb085d0-53a2-445d-b198-a5058238cc23" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.LD48/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD48/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.LD48/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.LD48/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Materials/Shader Graphs_SpriteGlowUnlit.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Materials/Shader Graphs_SpriteGlowUnlit.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Palettes/RockTIles.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Palettes/RockTIles.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TileHitbox_Black.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/TileHitbox_Black.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/CameraScroll.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/CameraScroll.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DestructableTiles.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DestructableTiles.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/LandLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/LandLevel.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TutorialLand.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TutorialLand.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TutorialLand2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TutorialLand2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TutorialWater.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TutorialWater.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/TutorialWater2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/TutorialWater2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/WaterLevel.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/WaterLevel.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/GenerateTiles.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GenerateTiles.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/particles/rock.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/particles/rock.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Textures/particles/rock.psd" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Textures/particles/rock.psd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Tutorial.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Tutorial.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,9 +63,9 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/DeathWall.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/CameraScroll.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/MainMenuUI.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/Tutorial.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/PlayerController.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GenerateTiles.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Tutorial.cs" />
       </list>
     </option>
   </component>
@@ -113,7 +109,7 @@
       <option name="presentableId" value="Default" />
       <updated>1619284229188</updated>
       <workItem from="1619284244773" duration="33776000" />
-      <workItem from="1619364078966" duration="23940000" />
+      <workItem from="1619364078966" duration="25279000" />
     </task>
     <servers />
   </component>

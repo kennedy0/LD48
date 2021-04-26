@@ -279,9 +279,9 @@ public class Tutorial : MonoBehaviour
         yield return new WaitForSeconds(2f);
         
         m.Clear();
-        m.Add("\"[Tutorial complete.]\"");
-        m.Add("\"[You can now play the game in Arcade mode.]\"");
-        m.Add("\"[Try to get a new high score!]\"");
+        m.Add("[Tutorial complete.]");
+        m.Add("[You can now play the game in Arcade mode.]");
+        m.Add("[Try to get a new high score!]");
         StartCoroutine(MessageBox.ShowMessages(m));
         yield return new WaitForSeconds(2f);
         

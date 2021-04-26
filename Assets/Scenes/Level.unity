@@ -6340,6 +6340,7 @@ MonoBehaviour:
   ScreenXOffset: 2.5
   TransitionTime: 1
   PauseAfterTransition: 1
+  SpeedTransitionTime: 5
   IsScrollingDown: 1
 --- !u!82 &519420034
 AudioSource:
@@ -7709,6 +7710,7 @@ MonoBehaviour:
   - You exploded.
   - You overheated.
   - You couldn't take the heat.
+  isTutorial: 0
 --- !u!1 &1312543802
 GameObject:
   m_ObjectHideFlags: 0
@@ -8702,7 +8704,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 101cfd8bf9601ef43984df9ae4997848, type: 2}
+  - {fileID: 2100000, guid: 9efc1023b222ac34989639d21a3d22bd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

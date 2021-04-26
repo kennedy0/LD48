@@ -5920,7 +5920,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 2.4, y: 48.7}
+  m_AnchoredPosition: {x: 2.4, y: 48.700012}
   m_SizeDelta: {x: 598.1, y: 60}
   m_Pivot: {x: 0.5, y: 1}
 --- !u!114 &436813537
@@ -6254,7 +6254,7 @@ MonoBehaviour:
   m_RendererIndex: -1
   m_VolumeLayerMask:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 119
   m_VolumeTrigger: {fileID: 0}
   m_RenderPostProcessing: 1
   m_Antialiasing: 0
@@ -6306,7 +6306,7 @@ Camera:
   m_AllowMSAA: 0
   m_AllowDynamicResolution: 0
   m_ForceIntoRT: 0
-  m_OcclusionCulling: 0
+  m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
 --- !u!4 &519420032
@@ -6340,6 +6340,7 @@ MonoBehaviour:
   ScreenXOffset: 2.5
   TransitionTime: 1
   PauseAfterTransition: 1
+  SpeedTransitionTime: 5
   IsScrollingDown: 1
 --- !u!82 &519420034
 AudioSource:
@@ -7709,6 +7710,7 @@ MonoBehaviour:
   - You exploded.
   - You overheated.
   - You couldn't take the heat.
+  isTutorial: 0
 --- !u!1 &1312543802
 GameObject:
   m_ObjectHideFlags: 0
@@ -7852,8 +7854,8 @@ Canvas:
   m_GameObject: {fileID: 1387534535}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -7862,7 +7864,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 100
   m_TargetDisplay: 0
 --- !u!224 &1387534539
 RectTransform:
@@ -8702,7 +8704,7 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 101cfd8bf9601ef43984df9ae4997848, type: 2}
+  - {fileID: 2100000, guid: 9efc1023b222ac34989639d21a3d22bd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -13966,7 +13968,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4c20cce64f7e6b64cb0fb77c6ec7dca1, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 097798a3e2e21e741b7e259442e3ceae, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

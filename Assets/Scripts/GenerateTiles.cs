@@ -85,7 +85,6 @@ public class GenerateTiles : MonoBehaviour
         int score = Mathf.FloorToInt(Mathf.Abs(cam.transform.position.y) * 5);
         int depth = Mathf.FloorToInt(score / 100);
         int wallThickness = MaxWallThickness + depth;
-        Debug.Log(wallThickness);
         
         for (int j = 0; j < ChunkHeight; j++)
         {

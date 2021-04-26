@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shader Graphs_SpriteGlowUnlit
+  m_Name: Shader Graphs_SpriteGlowUnlit 1
   m_Shader: {fileID: -6465566751694194690, guid: 2ae4144fe2f435b449ba7402b1d70ecc, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -37,5 +37,5 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats: []
     m_Colors:
-    - _Emission: {r: 0.7490196, g: 0.7490196, b: 0.7490196, a: 1}
+    - _Emission: {r: 47.937256, g: 47.937256, b: 47.937256, a: 1}
   m_BuildTextureStacks: []
