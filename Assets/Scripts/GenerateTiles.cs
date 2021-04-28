@@ -69,7 +69,8 @@ public class GenerateTiles : MonoBehaviour
         float playerY = player.transform.position.y;
         if (playerY < lastChunkY)
         {
-            GenerateChunks(playerY - chunkHeightWorldUnits);
+            GenerateChunks(lastChunkY - chunkHeightWorldUnits);
+            // GenerateChunks(playerY - chunkHeightWorldUnits);
         }
     }
 
